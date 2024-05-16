@@ -5,6 +5,10 @@
 
 // I AM NOT DONE
 
+fn call_me(){
+    println!("Hello, World!");
+}
 fn main() {
+    println!("its raining");
     call_me();
 }

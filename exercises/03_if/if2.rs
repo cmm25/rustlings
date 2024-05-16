@@ -11,10 +11,15 @@ pub fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
         "foo"
     } else {
-        1
+        "one"
     }
 }
+fn main (){
+    println!("{}", foo_if_fizz("fizz"));
+    println!("{}", foo_if_fizz("fuzz"));
+    println!("{}", foo_if_fizz("literally anything"));
 
+}
 // No test changes needed!
 #[cfg(test)]
 mod tests {
