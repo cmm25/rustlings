@@ -1,4 +1,5 @@
 pub fn animal_habitat(animal: &str) -> &'static str {
+    // Determine the identifier for the animal
     let identifier = if animal == "crab" {
         "1"
     } else if animal == "gopher" {
@@ -9,7 +10,7 @@ pub fn animal_habitat(animal: &str) -> &'static str {
         "Unknown"
     };
 
-    // DO NOT CHANGE THIS STATEMENT BELOW
+    // Determine the habitat based on the identifier
     let habitat = if identifier == "1" {
         "Beach"
     } else if identifier == "2" {
@@ -23,7 +24,8 @@ pub fn animal_habitat(animal: &str) -> &'static str {
     habitat
 }
 
-fn main(){
+fn main() {
+    // Print out the habitats for specific animals
     println!("{}", animal_habitat("crab"));
     println!("{}", animal_habitat("gopher"));
     println!("{}", animal_habitat("snake"));
